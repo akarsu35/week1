@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Meyve fiyatları
-        double armutFiyati = 2.14;
-        double elmaFiyati = 3.67;
-        double domatesFiyati = 1.11;
-        double muzFiyati = 0.95;
-        double patlicanFiyati = 5.00;
+        double armutF = 2.14;
+        double elmaF = 3.67;
+        double domatesF = 1.11;
+        double muzF = 0.95;
+        double patlicanF = 5.00;
 
         //değişkenlerimiz
         double armut,elma,domates,patlican,muz,total;
@@ -30,7 +30,7 @@ public class Main {
         muz=input.nextDouble();
 
         //alınan verilere göre toplam fiyat hesaplama
-        total=armut*2.14+elma*3.67+domates*1.11+muz*0.95+patlican*5;
+        total=armut*armutF+elma*elmaF+domates*domatesF+muz*muzF+patlican*patlicanF;
         System.out.println("toplam tutar: "+total+"Tl");
 
     }
