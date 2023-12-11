@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-       /* Armut : 2,14 TL
-        Elma : 3,67 TL
-        Domates : 1,11 TL
-        Muz: 0,95 TL
-        Patlıcan : 5,00 TL
-        */
+        // Meyve fiyatları
+        double armutFiyati = 2.14;
+        double elmaFiyati = 3.67;
+        double domatesFiyati = 1.11;
+        double muzFiyati = 0.95;
+        double patlicanFiyati = 5.00;
+
         //değişkenlerimiz
         double armut,elma,domates,patlican,muz,total;
 
