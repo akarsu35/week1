@@ -8,9 +8,11 @@ public class Main {
         Muz: 0,95 TL
         Patlıcan : 5,00 TL
         */
+        //değişkenlerimiz
         double armut,elma,domates,patlican,muz,total;
 
-        Scanner input=new Scanner(System.in);
+        Scanner input=new Scanner(System.in);//Scanner sınıfı ile kullanıcıdan veri alıyoruz.
+
         System.out.println("Armut Kaç Kilo ? :");
         armut=input.nextDouble();
 
@@ -26,6 +28,7 @@ public class Main {
         System.out.println("muz Kaç Kilo ? :");
         muz=input.nextDouble();
 
+        //alınan verilere göre toplam fiyat hesaplama
         total=armut*2.14+elma*3.67+domates*1.11+muz*0.95+patlican*5;
         System.out.println("toplam tutar: "+total+"Tl");
 
