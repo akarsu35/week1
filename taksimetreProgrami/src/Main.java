@@ -15,6 +15,7 @@ public class Main {
 
         //toplam tutar hesaplama
         total=(distance*perKm)+startPrice;
+        System.out.println(total);
 
         total=(total<20) ? 20:total;//20 TL altında ki ücretlerde yine 20 TL alınacaktır.
         System.out.println(distance+ "km için toplam ücret: "+total+"TL'dir.");
