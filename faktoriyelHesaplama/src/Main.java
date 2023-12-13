@@ -3,7 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         //c(n,r) = n! / (r! * (n-r)!)
-        int n,r,c,nfak=1,rfak=1,nr=1, cnr;
+        int n;
+        int r;
+        int nfak=1;  //n! demektir.
+        int rfak=1;  //r! demektir.
+        int nr=1;    //(n-r)! demektir.
+        int cnr;     //C(n,r) demektir.
 
         Scanner input=new Scanner(System.in);
         System.out.println("kombinasyon değerini bulmak istediğiniz sayıyı giriniz: ");
