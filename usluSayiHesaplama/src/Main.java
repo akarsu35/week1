@@ -17,7 +17,7 @@ public class Main {
         //üs hesaplama
         if(ust<0){
             for (int i = -1; i >= ust; i--) {
-                sonuc /= taban; // Tabanın tersi hesaplanıyor
+                sonuc /= taban; // negatif kuvvetler için tabana bölünür.
             }
             System.out.println(taban+" sayısının ("+ust+"). kuvveti: "+sonuc);
         }else{
