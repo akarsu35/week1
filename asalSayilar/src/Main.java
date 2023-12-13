@@ -8,6 +8,8 @@ public class Main {
                 if(i%j==0) { //bölen bulma
                     bolenSayisi += 1;
                 }
+
+
            }
            if(bolenSayisi==2){//bir sayının pozitif bölen sayısı 2 ise sayı asaldır.
               System.out.print(i+",");
@@ -15,7 +17,7 @@ public class Main {
             /*her sayı için kendisine kadar olan sayılarda bölen bulduktan sonra
              sonraki sayı için bölen sayısını sıfırlamalıyız.
              */
-           bolenSayisi=0;
+            bolenSayisi=0;
         }
     }
 }
