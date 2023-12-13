@@ -2,9 +2,9 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-//Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri
-// kabul eden ve girilen değerlerden çift ve 4'ün katları olan
-// sayıları toplayıp ekrana basan programı yazıyoruz.
+    /*Java döngüler ile tek bir sayı girilene kadar kullanıcıdan girişleri
+    kabul eden ve girilen değerlerden çift ve 4'ün katları olan(yani 4'ün katı)
+    sayıları toplayıp ekrana basan programı yazıyoruz.*/
         int sayi,toplam=0;
         Scanner input=new Scanner(System.in);
 
