@@ -10,23 +10,24 @@ public class Main
 
         for(int i=1;i<=n;i++)
         {
-            for(int j=1;j<=n-i;j++)
+            for(int j=1;j<=n-i;j++)//boşluk oluşturma
             {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i*2-1;j++)
+            for(int j=1;j<=i*2-1;j++)//yıldız oluşturma
             {
                 System.out.print("*");
             }
             System.out.println();
         }
+        //yıldızlarla ters üçgen
         for(int i=n-1;i>0;i--)
         {
-            for(int j=1;j<=n-i;j++)
+            for(int j=1;j<=n-i;j++)//boşluk oluşturma
             {
                 System.out.print(" ");
             }
-            for(int j=1;j<=i*2-1;j++)
+            for(int j=1;j<=i*2-1;j++)//yıldız oluşturma
             {
                 System.out.print("*");
             }
