@@ -25,6 +25,7 @@ public class Main {
             if(num1%i==0&&num2%i==0){
                 ebob=i;//ebob=1 almıştık.şimdi değiştiriyoruz.
 
+
             }
             i++;
         }
