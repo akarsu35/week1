@@ -23,6 +23,7 @@ public class Main {
         //yolculuk yönü
         System.out.println("yolculuk tipini seciniz lütfen\n1-tek yön\n2-gidiş dönüs");
         yon = input.nextInt();
+        normalprice=measure*0.1;
 
         /*Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
         Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
@@ -37,41 +38,41 @@ public class Main {
             switch (yon){
                 case 1:                         //tek yön seçimi
                     if (age<12) {
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.5;  //Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
                         price=normalprice-yasind;
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
 
                     }else if (age>=12&&age<24){
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.1;   //Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
                         price=normalprice-yasind;
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
                     }else if (age>65){
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.3;  //Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
                         price=normalprice-yasind;
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
                     }else {
-                        normalprice=measure*0.1;
+
                         price=normalprice;
                         System.out.println("Sayın "+name+" bilet fiyatınız: "+price+" TL");
                     }
                     break;
                 case 2:                                  //gidiş dönüş yön seçimi
                     if (age<12) {
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.5;
                         price=(normalprice-yasind)*0.8*yon; //yön indirimi uygulanınca bilet fiyatının %80 i ödenir.
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
 
                     }else if (age>=12&&age<24){
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.1;
                         price=(normalprice-yasind)*0.8*yon;  //yön indirimi uygulanınca bilet fiyatının %80 i ödenir.
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
                     }else if (age>65){
-                        normalprice=measure*0.1;
+
                         yasind=normalprice*0.3;
                         price=(normalprice-yasind)*0.8*yon;  //yön indirimi uygulanınca bilet fiyatının %80 i ödenir.
                         System.out.println("Sayın "+name+" indirimli bilet fiyatınız: "+price+" TL");
