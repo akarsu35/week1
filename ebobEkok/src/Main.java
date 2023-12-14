@@ -15,10 +15,13 @@ public class Main {
         System.out.println("ikinci sayıyı giriniz: ");
         num2= input.nextInt();
 
-        /*küçük sayıya kadar olan ortak bölenlere bakmamız yeterlidir.
-       çünkü küçük sayıdan büyük olanlar büyük sayıyı bölerken
-       küçük sayıyı bölmeyecektir.*/
-        while(i<=Math.min(num1,num2)){
+
+        while(i<=num1){
+             /*herhangibir sayıya kadar olan ortak bölenlere bakmamız yeterlidir.
+       eğer sayı küçük ise sayıdan büyük olanlar büyük sayıyı bölerken
+       küçük sayıyı bölmeyecektir.
+       eğer sayı büyükse küçük sayıya kadar olanlardan ortak bölen olur.
+       yani burada num1 yerine num2 de yazsak aynı sonucu alırız.*/
             if(num1%i==0&&num2%i==0){
                 ebob=i;//ebob=1 almıştık.şimdi değiştiriyoruz.
 
